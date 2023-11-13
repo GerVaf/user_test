@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://api.user.opaqueindustries.news";
+const baseUrl = "https://testus.api.opaqueindustries.news";
 
 const axiosInstance = axios.create({
   baseURL: baseUrl,
