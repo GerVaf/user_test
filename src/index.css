@@ -3,10 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   font-family: 'Noto Sans Myanmar', 'Poppins', sans-serif;
-}
-
+} */
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */

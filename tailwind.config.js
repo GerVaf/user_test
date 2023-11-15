@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mya: "Noto Sans Myanmar",
+        sans: "Poppins",
+      },
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 };

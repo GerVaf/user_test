@@ -3,7 +3,6 @@ import music from "/music.svg";
 import sport from "/sports.svg";
 import { get } from "../../Global/api";
 import RecentBlog from "../VariantBlogs/RecentBlog";
-import Loading from "../Loading/Loading";
 
 const Category = () => {
   const [loading, setLoading] = useState(true);
