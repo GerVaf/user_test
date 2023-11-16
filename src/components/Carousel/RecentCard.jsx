@@ -14,17 +14,17 @@ const RecentCard = ({ blog }) => {
     .replace(/&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-fA-F]{1,6});/gi, " ");
 
   return (
-    <div className="relative h-full rounded overflow-hidden">
+    <div className="relative h-full overflow-hidden rounded">
       <img src={blog?.images?.url} alt="" />
       {/* Title and Description */}
-      <div className="absolute bottom-0 w-full h-[40%] flex flex-col p-5 text-white bg-gradient-to-b from-transparent via-black/80 to-black/90">
+      <div className="absolute bottom-0 w-full h-[45%] flex flex-col p-5 text-white bg-gradient-to-b from-transparent via-black/80 to-black/90">
         <div className="flex-1 flex flex-col items-start gap-2">
           {/* Category */}
           <p className="bg-white text-black px-3 rounded uppercase">{blog?.category}</p>
           {/* Title */}
           <h1 className=" font-black text-3xl">{blog?.title}</h1>
           {/* Description */}
-          {desc.length > 100 ? desc.substring(0, 100) + "..." : desc}
+          {desc.length > 100 ? desc.substring(0, 90) + "..." : desc}
         </div>
         {/* Read More Button */}
         <div

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { get } from "../../Global/api";
 
-import RecentCarousel from "../Carousel/RecentCarousel";
+import SwiperCarousel from "../Carousel/SwiperCarousel";
 
 const RecentNews = () => {
   const [recentNews, setRecentNews] = useState([]);
@@ -19,7 +19,7 @@ const RecentNews = () => {
       {/* Header */}
       <h1 className="font-bold text-5xl text-white mb-5">Recent News</h1>
       {/* Blogs */}
-      <RecentCarousel recentNews={recentNews} />
+      <SwiperCarousel recentNews={recentNews}/>
     </div>
   );
 };
